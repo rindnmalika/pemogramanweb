@@ -43,26 +43,73 @@
          <br><br>
 
          <label for="no_whatsapp">No Whatsapp / HP :</label><br>
-         <input type="tel" id="no_whatsapp" name="no_whatsapp"
-         placeholder="081234567890" size="40" required>
+         <input type="tel" id="no_whatsapp" name="no_whatsapp" placeholder="081234567890" size="40" required>
          <br><br>
 
          <label>Tipe Kategori Klien:</label><br>
-         <input type="radio" id="kategori_personal"
-         name="tipe_klien" value="Personal" checked>
+         <input type="radio" id="kategori_personal" name="tipe_klien" value="Personal" checked>
+
          <label for="kategori_personal">Perorangan / UMKM</label>&nbsp;&nbsp;
-         <input type="radio" id="kategori_korporat"
-         name="tipe_klien" value="korporat">
+         <input type="radio" id="kategori_korporat" name="tipe_klien" value="korporat">
          <label for="kategori_korporat">Perusahaan / Instansi Pemerintahan</label>
          <br><br>
-         </fieldset>
-         <!-- Detail Pemesanan Pelayanan  -->
-          <fieldset>
-            <legend><b>2. Rincian Pemesanan Digital</b></legend>
-          </fieldset>
-      </form>
-   </main>
 
+         </fieldset>
+         <!--Grup 2: Detail Pemesanan Pelayanan  -->
+         <fieldset>
+            <legend><b>2. Rincian Pemesanan Digital</b></legend>
+            <br>
+            <label for="pilihan_paket">Pilihan Paket Layanan (Lihat katalog di halaman Produk:)</label><br>
+            <select id="pilih paket" name="pilih_paket" required>
+               <option value="">-- Pilih Paket Jasa --</option>
+               <option value="Silver">Paket Silver Branding (Rp 1.500.00)</option>
+               <option value="Gold">Paket Gold Web Development (Rp 3.000.000)</option>
+               <option value="Platinum">Paket Platinum Full Digita; Transformation (Rp 5.000.000)</option>
+               <option value="Costum">Konsultasi Costum Project</option>
+            </select>
+            <br><br>
+
+            <label>Layanan Tambahan (Add-Ons):</label><br>
+            <input type="checkbox" id="addon_seo" name="addons[]" value="SEO  Optimalization">
+            <label for="addon_seo">Optimasi SEO On-Pagw (+ Rp 500.000)</label><br>
+            <input type="checkbox" id="addon_express" name="addons[]" value="Express Delivery">
+            <label for="addon_express">Pengerjaan Kilat 3 Hari (+ Rp 750.000)</label><br>
+            <input type="checkbox" id="addon_content" name="addons[]" value="Content Writing">
+            <label for="addon_content">Penulisan Konten Artikel & Copywriting (+ Rp 400.000)</label><br>
+            <br><br>
+
+            <label for="target_selesai">Estiminasi Target Selesai</label>
+            <input type="date" id="terget_selesai" name="target_selesai">
+            <br><br>
+
+            <label for="detail_pesan">Deskripsi/ Catatan Khusus Proyek:</label>
+            <textarea name="detail_pesan" id="detail_pesan" rows="6" cols="50"
+               placeholder="Tuliskan gambaran singkat mengenai proyek yang Anda inginkan ....."></textarea>
+            <br><br>
+
+            <!-- Tombol Aksi -->
+            <button type="submit"><b>Kirim Pemesanan Sekarang</b></button>
+            &nbsp;
+            <button type="reset">Bersihkan Formulir</button>
+         </fieldset>
+      </form>
+
+      <!-- Bagian Informasi ALamat & Peta Studio -->
+      <section>
+         <hr>
+         <h3>Kantor & Studio Operasional</h3>
+         <p><b>Poliban DigiCraft Studio Banjarmasin</b><br>
+            Gedung Laboratorium Bisnis Digital, Kampus Politeknik Negeri Banjarmasin<br>
+            Jl. Bridgen H. Hasan Basry, Kayu Tangi, Banjarmasin, Kalimantan Selatan<br>
+            Email: <i>info@digicraftstudio.ac.id</i> | Whatsapp: <i>0812-5555-8888</i></p>
+
+         <h4>Lokasi Studio di Google Maps:</h4>
+         <iframe
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3983.708186052269!2d98.2731944!3d3.1713333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zM8KwMTAnMTYuOCJOIDk4wrAxNicyMy41IkU!5e0!3m2!1sen!2sid!4v1791270602249!5m2!1sen!2sid"
+            width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </section>
+   </main>
    <footer>
       <hr>
       <p align="center">&copy; 2026 Poliban DigiCraft Studio. All rights reserved.</p>
